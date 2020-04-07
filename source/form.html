@@ -34,6 +34,81 @@
       <div class="page-main__wrapper">
         <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">
       </div>
+      <section class="competition">
+        <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+        <form class="request" method="GET" action="https://echo.htmlacademy.ru">
+          <p class="request__item">
+            <label class="request__label" for="request-surname">Фамилия:</label>
+            <input class="request__input" id="request-surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+          </p>
+          <p class="request__item">
+            <label class="request__label" for="request-name">Имя:</label>
+            <input class="request__input" id="request-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+          </p>
+          <p class="request__item">
+            <label class="request__label" for="request-patronymic">Отчество:</label>
+            <input class="request__input" id="request-patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+          </p>
+          <fieldset class="request__group">
+            <legend class="request__subtitle">Ваши безбашенные достижения в путешествии</legend>
+            <ul >
+              <li>
+                <input class="request__label" id="filter-selfie-shark" type="checkbox" name="selfie-shark" checked>
+                <label class="request__input" for="filter-selfie-shark">Сделал селфи с акулой</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-sunburned-beach" type="checkbox" name="sunburned-beach" checked>
+                <label class="request__input" for="filter-sunburned-beach">Обгорел на пляже</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-chuck-norris" type="checkbox" name="chuck-norris" >
+                <label class="request__input" for="filter-chuck-norris">Видел Чака Норриса</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-souvenirs" type="checkbox" name="souvenirs" >
+                <label class="request__input" for="filter-souvenirs">Накупил сувениров</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-tower" type="checkbox" name="tower" checked>
+                <label class="request__input" for="filter-tower">Удержал башню</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-hotel" type="checkbox" name="hotel" >
+                <label class="request__input" for="filter-hotel">Разгромил отель</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="request__item">
+            <label class="request__label" for="request-phone">Номер телефона</label>
+            <input class="request__input" id="request-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
+          </p>
+          <p class="request__item">
+            <label class="request__label" for="request-mail">адрес почты</label>
+            <input class="request__input" id="request-mail" type="email" name="mail" value="" placeholder="Ну и отчество тоже">
+          </p>
+          <fieldset class="request__group">
+            <legend class="request__subtitle">С каким приложением путешествовали?</legend>
+            <ul >
+              <li>
+                <input class="request__label" id="filter-iOS" type="radio" name="operating-system" value="ios" checked>
+                <label class="request__input" for="filter-iOS">Pink для iOS</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-android" type="radio" name="operating-system" value="android">
+                <label class="request__input" for="filter-android">Pink на Android</label>
+              </li>
+              <li>
+                <input class="request__label" id="filter-windows-phone" type="radio" name="operating-system" value="windows-phone" >
+                <label class="request__input" for="filter-windows-phone">Windows Phone</label>
+              </li>
+            </ul>
+          </fieldset>
+          <p class="request__subtitle">Опишите свои эмоции</p>
+          <textarea class="request__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+          <button class="competition__button">Отправить форму</button>
+          <p class="competition__desc">* — обязательные поля</p>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
@@ -53,10 +128,9 @@
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright copyright">
-          <b class="copyright__text">Разработано</b>
-          <a class="copyright_link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
-        </div>
+        <p class="page-footer__copyright copyright">Разработано
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+        </p>
       </div>
     </footer>
   </body>
