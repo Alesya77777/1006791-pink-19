@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,31 +12,31 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-title">Взгляните на жизнь иначе!</h1>
+      <h1 class="page-main__title">Взгляните на жизнь иначе!</h1>
       <div class="page-main__wrapper">
-        <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">
+        <!--<img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">-->
       </div>
-      <img class="main-image" src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Рука держит айфон фотографирующий здание">
+      <img class="main-image" src="img/iphone-hand-mobile@1x.png" width="260" height="290" alt="Рука держит айфон фотографирующий здание">
       <section class="download">
         <h2 class="visually-hidden">Скачивание приложения</h2>
         <a class="download__application" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
@@ -66,16 +68,16 @@
         <div class="features__wrapper--gray">
           <ul class="features_list">
             <li class="features__item">
-              <h3 class="features_title">Поднимает настроение</h3>
-              <p class="features_description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вaм победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
-              <h3 class="features_title">Меняет мир вокруг</h3>
-              <p class="features_description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
-              <h3 class="features_title">Заводит новых друзей</h3>
-              <p class="features_description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Скриншот айфона">

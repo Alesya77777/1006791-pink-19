@@ -1,0 +1,26 @@
+.download {
+  background-color: hsl(213, 41, 15);
+}
+
+.download__application {
+  padding: 15px 35px;
+
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+  color: #ffffff;
+
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+}
+
+.download__list {
+  list-style: none;
+}
+
+.download__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #ffffff;
+}

@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -14,41 +16,46 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">Фотографии</a>
+              <a class="site-list__link" href="photo.html">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a >Конкурс</a>
+              <a class="site-list__link">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
       <div class="page-main__wrapper">
         <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">
       </div>
       <section class="competition">
         <p class="competition__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
         <form class="request" method="GET" action="https://echo.htmlacademy.ru">
-          <p class="request__item">
-            <label class="request__label" for="request-surname">Фамилия:</label>
-            <input class="request__input" id="request-surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
-          </p>
-          <p class="request__item">
-            <label class="request__label" for="request-name">Имя:</label>
-            <input class="request__input" id="request-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
-          </p>
-          <p class="request__item">
-            <label class="request__label" for="request-patronymic">Отчество:</label>
-            <input class="request__input" id="request-patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
-          </p>
+          <fieldset class="request__group">
+            <legend class="visually-hidden">ФИО пользователя</legend>
+            <ul class="request__list">
+              <li class="request__item">
+                <label class="request__label" for="request-surname">Фамилия:</label>
+                <input class="request__input" id="request-surname" type="text" name="surname" value="" placeholder="Укажите фамилию *">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-name">Имя:</label>
+                <input class="request__input" id="request-name" type="text" name="name" value="" placeholder="Введите ваше имя *">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-patronymic">Отчество:</label>
+                <input class="request__input" id="request-patronymic" type="text" name="patronymic" value="" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="request__group">
             <legend class="request__subtitle">Ваши безбашенные достижения в путешествии</legend>
             <ul >
@@ -78,14 +85,19 @@
               </li>
             </ul>
           </fieldset>
-          <p class="request__item">
-            <label class="request__label" for="request-phone">Номер телефона</label>
-            <input class="request__input" id="request-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="request__item">
-            <label class="request__label" for="request-mail">адрес почты</label>
-            <input class="request__input" id="request-mail" type="email" name="mail" value="" placeholder="Ну и отчество тоже">
-          </p>
+          <fieldset class="request__group">
+            <legend class="visually-hidden">Контактная информация</legend>
+            <ul class="request__list">
+              <li class="request__item">
+                <label class="request__label" for="request-phone">Номер телефона</label>
+                <input class="request__input" id="request-phone" type="tel" name="phone" value="" placeholder="Номер, пожалуйста">
+              </li>
+              <li class="request__item">
+                <label class="request__label" for="request-mail">адрес почты</label>
+                <input class="request__input" id="request-mail" type="email" name="mail" value="" placeholder="Ну и отчество тоже">
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="request__group">
             <legend class="request__subtitle">С каким приложением путешествовали?</legend>
             <ul >
@@ -129,7 +141,7 @@
           </ul>
         </div>
         <p class="page-footer__copyright copyright">Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+          <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
         </p>
       </div>
     </footer>

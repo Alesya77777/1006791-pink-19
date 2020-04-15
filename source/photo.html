@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,29 +12,29 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-title">Фотографии пользователей</h1>
+      <h1 class="page-main__title">Фотографии пользователей</h1>
       <div class="page-main__wrapper">
-        <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">
+        <!--<img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">-->
       </div>
       <section class="photo">
         <div class="photo photo-text__wrapper">
@@ -161,7 +163,7 @@
           </ul>
         </div>
         <p class="page-footer__copyright copyright">Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+          <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
         </p>
       </div>
     </footer>
