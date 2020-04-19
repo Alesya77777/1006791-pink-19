@@ -1,7 +1,6 @@
 .photo {
-  font-size: 14px;
+  @include standard-text($text-color);
   line-height: 30px;
-  color: #283645;
 }
 
 .photo__list {
@@ -9,33 +8,26 @@
 }
 
 .photo__comment {
-  background-color: #f2f2f2;
+  background-color: $photo-background-color;
 }
 
 .photo__author {
-  font-size: 14px;
+  @include standard-text($text-color);
   font-weight: 800;
   font-style: normal;
-  line-height: 24px;
-  color: #283645;
 }
 
 .photo__time {
-  font-size: 14px;
-  font-weight: lighter;
-  line-height: 24px;
-  color: #283645;
+  @include standard-text($text-color);
+  font-weight: 300;
 }
 
 .photo__text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  color: #283645;
+  @include standard-text($text-color);
 }
 
 .photo__like {
-  font-size: 12px;
-  line-height: 24px;
-  color: #d22856;
+  @include small-text;
+  color: $text-link-color;
+  text-transform: uppercase;
 }

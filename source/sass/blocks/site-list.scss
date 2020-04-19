@@ -2,11 +2,12 @@
   list-style: none;
 }
 
-.site-list__link {
-  font-size: 18px;
-  font-weight: 800;
-  color: #ffffff;
-  line-height: 32px;
+.site-list__item {
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.85);
+}
 
+.site-list__link {
+  @include menu-text ($title-color);
   text-transform: uppercase;
 }
+

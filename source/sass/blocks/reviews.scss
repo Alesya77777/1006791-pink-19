@@ -1,0 +1,13 @@
+.reviews__author {
+  @include small-middle-text;
+  font-style: normal;
+  line-height: 30px;
+  color: $subtitle-color;
+}
+
+.reviews__text {
+  @include standard-text($text-color);
+  margin-left: 22px;
+  margin-right: 22px;
+}
+

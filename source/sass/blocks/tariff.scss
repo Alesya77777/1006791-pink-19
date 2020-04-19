@@ -1,0 +1,21 @@
+.tariff__item {
+  background-color: $text-color;
+  border: 1px solid $table-border-color;
+}
+
+.tariff__title {
+  @include menu-text ($title-color);
+  line-height: 30px;
+}
+
+.tariff__cost {
+  @include title-text($title-color);
+  line-height: 30px;
+}
+
+.tariff__field {
+  @include standard-text($text-color);
+  line-height: 30px;
+
+  border: 1px solid $table-border-color;
+}

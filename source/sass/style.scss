@@ -1,4 +1,6 @@
-
+@import "source/sass/variables";
+@import "source/sass/mixins";
+@import "source/sass/custom_reset";
 @import "source/sass/blocks/page-header";
 @import "source/sass/blocks/main-nav";
 @import "source/sass/blocks/site-list";
@@ -9,12 +11,6 @@
 @import "source/sass/blocks/photo";
 @import "source/sass/blocks/page-footer";
 @import "source/sass/blocks/social";
-
-body {
-  font-family: "Open Sans", "Arial", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
+@import "source/sass/blocks/reviews";
+@import "source/sass/blocks/tariff";
 
