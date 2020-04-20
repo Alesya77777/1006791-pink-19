@@ -1,0 +1,33 @@
+.photo {
+  @include standard-text($text-color);
+  line-height: 30px;
+}
+
+.photo__list {
+  list-style: none;
+}
+
+.photo__comment {
+  background-color: $photo-background-color;
+}
+
+.photo__author {
+  @include standard-text($text-color);
+  font-weight: 800;
+  font-style: normal;
+}
+
+.photo__time {
+  @include standard-text($text-color);
+  font-weight: 300;
+}
+
+.photo__text {
+  @include standard-text($text-color);
+}
+
+.photo__like {
+  @include small-text;
+  color: $text-link-color;
+  text-transform: uppercase;
+}

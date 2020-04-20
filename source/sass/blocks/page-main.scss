@@ -1,0 +1,9 @@
+.page-main__wrapper {
+  width: 320px;
+  height: 462px;
+  background-image: url("../../img/bg-back-mobile@1x.jpg");
+}
+
+.page-main__title {
+  @include title-text($title-color);
+}

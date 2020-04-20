@@ -1,0 +1,17 @@
+.feature__text {
+  @include feature-text($text-color);
+}
+
+.features_list {
+  list-style: none;
+}
+
+.features__title {
+  @include middle-text;
+  font-weight: 800;
+  color: $subtitle-color;
+}
+
+.features__description {
+  @include standard-text($text-color);
+}

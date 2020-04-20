@@ -1,0 +1,24 @@
+.download {
+  background-color: $download-color;
+}
+
+.download__application {
+  padding: 15px 35px;
+
+
+  @include small-middle-text;
+  color: $title-color;
+
+  border: 3px solid $title-color;
+  border-radius: 50px;
+}
+
+.download__list {
+  list-style: none;
+}
+
+.download__text {
+  @include standard-text($text-color);
+  font-weight: 300;
+  color: $title-color;
+}

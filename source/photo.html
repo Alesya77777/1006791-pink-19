@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -10,33 +12,32 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a>Фотографии</a>
+              <a class="site-list__link">Фотографии</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Конкурс</a>
+              <a class="site-list__link" href="form.html">Конкурс</a>
             </li>
             <li class="site-list__item">
-              <a href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
+              <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/19">htmlacademy</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main class="page-main">
-      <h1 class="main-title">Фотографии пользователей</h1>
-      <div class="page-main__wrapper">
-        <img class="page-main__image" src="img/bg-back-mobile@1x.jpg" width="320" height="462" alt="Фоновое изображение - здание">
-      </div>
+      <h1 class="page-main__title">Фотографии пользователей</h1>
+      <div class="page-main__wrapper"></div>
       <section class="photo">
+        <h2 class="visually-hidden">Опубликованные фотографии</h2>
         <div class="photo photo-text__wrapper">
-          <p class="photo-text__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="photo-text__text">Взгляните на фотографии, которые выкладывают пользoватели! Видите, как не хватает ваших?</p>
         </div>
         <div class="photo__wrapper">
           <ul class="photo__list">
@@ -123,19 +124,20 @@
         <p class="photo-text__text">Выкладывайте все, что накопилось в телефоне!</p>
       </section>
       <section class="image-processing">
+        <h2 class="visually-hidden">Редактор изображений</h2>
         <img class="image-processing__photo" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Фотография заснеженной дороги" >
         <ul class="image-processing__list">
           <li class="image-processing__item">
             <label class="visually-hidden" for="crop-image">Обрезать</label>
-            <input id="crop-image" type="range" name="crop" value="">
+            <input id="crop-image" type="range" name="crop" min="0" max="10" value="8" step="1">
           </li>
           <li class="image-processing__item">
             <label class="visually-hidden" for="fill-image">Заливка</label>
-            <input id="fill-image" type="range" name="fill" value="">
+            <input id="fill-image" type="range" name="fill" min="0" max="10" value="8" step="1">
           </li>
           <li class="image-processing__item">
             <label class="visually-hidden" for="shadow-image">Тень</label>
-            <input id="shadow-image" type="range" name="shadow" value="">
+            <input id="shadow-image" type="range" name="shadow" min="0" max="10" value="8" step="1">
           </li>
         </ul>
         <button class="image-processing__button" type="submit">Запостить</button>
@@ -161,7 +163,7 @@
           </ul>
         </div>
         <p class="page-footer__copyright copyright">Разработано
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+          <a class="copyright__link visually-hidden" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
         </p>
       </div>
     </footer>
