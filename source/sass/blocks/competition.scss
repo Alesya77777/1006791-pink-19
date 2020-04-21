@@ -1,0 +1,4 @@
+.competition__text {
+  @include standard-text($text-color);
+  line-height: 30px;
+}

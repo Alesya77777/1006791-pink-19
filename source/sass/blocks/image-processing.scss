@@ -1,0 +1,15 @@
+.image-processing {
+  background-color: $photo-background-color;
+}
+
+.image-processing__list {
+  list-style: none;
+}
+
+.image-processing__button {
+  @include small-middle-text;
+  color: $text-link-color;
+
+  border: 3px solid $text-link-color;
+  border-radius: 50px;
+}

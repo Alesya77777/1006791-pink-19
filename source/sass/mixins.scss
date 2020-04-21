@@ -41,3 +41,10 @@
   line-height: 32px;
   color: $title-color;
 }
+
+@mixin input-text($text-color) {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: $text-color;
+}

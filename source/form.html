@@ -12,7 +12,7 @@
         <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Пинк">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle visually-hidden" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -55,9 +55,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="request__group">
+          <fieldset class="request__group request__group--gray">
             <legend class="request__subtitle">Ваши безбашенные достижения в путешествии</legend>
-            <ul >
+            <ul class="request__list">
               <li>
                 <input class="request__label" id="filter-selfie-shark" type="checkbox" name="selfie-shark" checked>
                 <label class="request__input" for="filter-selfie-shark">Сделал селфи с акулой</label>
@@ -97,9 +97,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="request__group">
+          <fieldset class="request__group request__group--gray">
             <legend class="request__subtitle">С каким приложением путешествовали?</legend>
-            <ul >
+            <ul class="request__list">
               <li>
                 <input class="request__label" id="filter-iOS" type="radio" name="operating-system" value="ios" checked>
                 <label class="request__input" for="filter-iOS">Pink для iOS</label>
@@ -115,9 +115,10 @@
             </ul>
           </fieldset>
           <p class="request__subtitle">Опишите свои эмоции</p>
-          <textarea class="request__input" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-          <button class="competition__button">Отправить форму</button>
-          <p class="competition__desc">* — обязательные поля</p>
+          <textarea class="request__input request__textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" ></textarea>
+          <button class="request__button">Отправить форму</button>
+          <span class="request__desc--pink">*</span>
+          <span class="request__desc">— обязательные поля</span>
         </form>
       </section>
     </main>

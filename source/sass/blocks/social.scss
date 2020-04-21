@@ -1,3 +1,8 @@
 .social__list {
   list-style: none;
 }
+
+.social__link {
+  border: 2px solid $table-border-color;
+  border-radius: 10px;
+}

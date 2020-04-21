@@ -3,11 +3,17 @@
   line-height: 30px;
 }
 
+.photo-text__text {
+  @include standard-text($text-color);
+  line-height: 30px;
+}
+
 .photo__list {
   list-style: none;
 }
 
 .photo__comment {
+  padding-left: 17px;
   background-color: $photo-background-color;
 }
 
@@ -28,6 +34,7 @@
 
 .photo__like {
   @include small-text;
+  font-weight: normal;
   color: $text-link-color;
   text-transform: uppercase;
 }

@@ -1,0 +1,13 @@
+.contact__text {
+  @include feature-text($text-color);
+}
+
+.contact_title {
+  @include small-middle-text;
+  line-height: normal;
+  color: $text-color;
+}
+
+.contact_data {
+  @include title-text($title-color:#d22856);
+}
