@@ -7,7 +7,10 @@
 }
 
 .site-list__link {
-  @include menu-text ($title-color);
+  @include standard-text;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  color: $title-color;
   text-transform: uppercase;
 }
-

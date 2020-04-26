@@ -1,13 +1,23 @@
 .contact__text {
-  @include feature-text($text-color);
+  @include standard-text;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  color: $text-color;
 }
 
 .contact_title {
-  @include small-middle-text;
+  @include standard-text;
+  font-size: 18px;
+  font-weight: bold;
   line-height: normal;
   color: $text-color;
 }
 
 .contact_data {
-  @include title-text($title-color:#d22856);
+  @include standard-text;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  color: $text-link-color;
 }

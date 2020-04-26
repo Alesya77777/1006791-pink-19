@@ -5,5 +5,9 @@
 }
 
 .page-main__title {
-  @include title-text($title-color);
+  @include standard-text;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  color: $title-color;
 }

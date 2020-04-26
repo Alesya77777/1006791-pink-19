@@ -1,4 +1,5 @@
 .page-footer__copyright {
-  @include standard-text($text-color);
+  @include standard-text;
   line-height: 18px;
+  color: $text-color;
 }

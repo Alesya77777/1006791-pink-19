@@ -1,5 +1,9 @@
 .feature__text {
-  @include feature-text($text-color);
+  @include standard-text;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: normal;
+  color: $text-color;
 }
 
 .features_list {
@@ -7,11 +11,13 @@
 }
 
 .features__title {
-  @include middle-text;
-  font-weight: 800;
+  @include standard-text;
+  font-size: 18px;
+  font-weight: bold;
   color: $subtitle-color;
 }
 
 .features__description {
-  @include standard-text($text-color);
+  @include standard-text;
+  color: $text-color;
 }

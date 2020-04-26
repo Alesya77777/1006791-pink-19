@@ -7,7 +7,10 @@
 }
 
 .image-processing__button {
-  @include small-middle-text;
+  @include standard-text;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 18px;
   color: $text-link-color;
 
   border: 3px solid $text-link-color;

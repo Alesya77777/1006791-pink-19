@@ -8,18 +8,25 @@
 }
 
 .tariff__title {
-  @include menu-text ($title-color);
+  @include standard-text;
+  font-size: 18px;
+  font-weight: bold;
   line-height: 30px;
+  color: $title-color;
 }
 
 .tariff__cost {
-  @include title-text($title-color);
+  @include standard-text;
+  font-size: 24px;
+  font-weight: 300;
   line-height: 30px;
+  color: $title-color;
 }
 
 .tariff__field {
-  @include standard-text($text-color);
+  @include standard-text;
   line-height: 30px;
+  color: $text-color;
 
   border: 1px solid $table-border-color;
 }

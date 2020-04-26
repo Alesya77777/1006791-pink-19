@@ -18,7 +18,7 @@
 }
 
 .download__text {
-  @include standard-text($text-color);
+  @include standard-text;
   font-weight: 300;
   color: $title-color;
 }
